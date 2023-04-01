@@ -1,0 +1,22 @@
+.customers {
+  .list {
+    display: flex;
+    justify-content: space-between;
+
+    .item {
+      svg {
+        display: flex;
+        width: 170px;
+        height: 92px;
+        border: 1px solid #afb1b8;
+        border-radius: 4px;
+        fill: #afb1b8;
+        &:hover {
+          border-color: var(--brand-blue);
+          fill: var(--brand-blue);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

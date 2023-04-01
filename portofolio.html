@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/portofoliostyles.css" />
+  <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header class="header-section">
+    <div class="container header-container">
+      <nav class="header-left-list">
+        <a class="header-left-list__logo link" href="logo.html">Web</a>
+        <ul class="navigation-list unstyled-list menu">
+          <li><a class="link navigation-list__studio" href="index.html">Studio</a></li>
+          <li><a class="link navigation-list__portofolio active-link" href="portofolio.html">Portfolio</a></li>
+          <li><a class="link navigation-list__contacts" href="contacts.html">Contacts</a></li>
+        </ul>
+      </nav>
+      <ul class="unstyled-list header-contacts menu">
+        <li><a class="link header-item" href="mailto:info@devstudio.com"></a>
+          <svg class="header-contacts__icon" width="16" height="12">
+            <use href="./images/icons.svg#icon-envelope"></use>
+          </svg>info@devstudio.com</a>
+        </li>
+        <li><a class="link header-item" href="tel:+12127724150"></a>
+          <svg class="header-contacts__icon" width="10" height="16">
+            <use href="./images/icons.svg#icon-telephone"></use>
+          </svg>+1 212-772-4150</a>
+        </li>
+      </ul>
+      <!-- Open Mobile Menu button -->
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+        </svg>
+      </button>
+      <!--  -->
+    </div>
+  </header>
+  <!-- Main Section -->
+  <main class="main-section section">
+    <div class="container">
+      <div>
+        <ul class="unstyled-list button-list">
+          <li><button class="button button-list__first-button" type="button">All</button></li>
+          <li><button class="button button-list__second-button" type="button">Web-sites</button></li>
+          <li><button class="button button-list__third-button" type="button">Apps</button></li>
+          <li><button class="button button-list__fourth-button" type="button">Design</button></li>
+          <li><button class="button button-list__fifth-button" type="button">Marketing</button></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Sub Section Portofolio -->
+    <section>
+      <div class="container">
+        <div class="portofolio-all">
+          <ul class="unstyled-list portofolio-list">
+            <li class="portofolio-list__card">
+              <div class="image-overlay">
+                <img class="image-overlay__image" src="./images/Technoduck.jpg" alt="Technoduck" />
+                <div class="overlay">
+                  <p class="overlay__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto!</p>
+                </div>
+              </div>
+              <h3 class="portofolio-list__card-title">Technoduck</h3>
+              <p class="portofolio-list__card-description">Web-site</p>
+            </li>
+
+            <li class="portofolio-list__card">
+              <div class="image-overlay">
+                <img class="image-overlay__image" src="./images/PosterNewOrleanvsGoldenStar.jpg" alt="Poster New Orlean" />
+                <div class="overlay">
+                  <p class="overlay__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto!</p>
+                </div>
+              </div>
+              <h3 class="portofolio-list__card-title">Poster New Orlean vs Golden Star</h3>
+              <p class="portofolio-list__card-description">Design</p>
+            </li>
+
+            <li class="portofolio-list__card">
+              <div class="image-overlay">
+                <img class="image-overlay__image" src="./images/SeafoodRestaurant.jpg" alt="Seafood Restaurant " />
+                <div class="overlay">
+                  <p class="overlay__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto!</p>
+                </div>
+              </div>
+              <h3 class="portofolio-list__card-title">Seafood Restaurant</h3>
+              <p class="portofolio-list__card-description">Apps</p>
+            </li>
+
+            <li class="portofolio-list__card">
+              <div class="image-overlay">
+                <img class="image-overlay__image" src="./images/ProjectPrime.jpg" alt="Project Prime" />
+                <div class="overlay">
+                  <p class="overlay__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto!</p>
+                </div>
+              </div>
+              <h3 class="portofolio-list__card-title">Project Prime</h3>
+              <p class="portofolio-list__card-description">Marketing</p>
+            </li>
+
+            <li class="portofolio-list__card">
+              <div class="image-overlay">
+                <img class="image-overlay__image" src="./images/ProjectBoxes.jpg" alt="Project Boxes" />
+                <div class="overlay">
+                  <p class="overlay__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto!</p>
+                </div>
+              </div>
+              <h3 class="portofolio-list__card-title">Project Boxes</h3>
+              <p class="portofolio-list__card-description">Apps</p>
+            </li>
+
+            <li class="portofolio-list__card">
+              <div class="image-overlay">
+                <img class="image-overlay__image" src="./images/InspirationhasnoBorders.jpg" alt="Inspiration has no Borders" />
+                <div class="overlay">
+                  <p class="overlay__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto!</p>
+                </div>
+              </div>
+              <h3 class="portofolio-list__card-title">Inspiration has no Borders</h3>
+              <p class="portofolio-list__card-description">Web-site</p>
+            </li>
+
+
+            <li class="portofolio-list__card">
+              <div class="image-overlay">
+                <img class="image-overlay__image" src="./images/LimitedEdition.jpg" alt="Limited Edition" />
+                <div class="overlay">
+                  <p class="overlay__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto!</p>
+                </div>
+              </div>
+              <h3 class="portofolio-list__card-title">Limited Edition</h3>
+              <p class="portofolio-list__card-description">Design</p>
+            </li>
+
+
+            <li class="portofolio-list__card">
+              <div class="image-overlay">
+                <img class="image-overlay__image" src="./images/ProjectLAB.jpg" alt="Project LAB" />
+                <div class="overlay">
+                  <p class="overlay__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto!</p>
+                </div>
+              </div>
+              <h3 class="portofolio-list__card-title">Project LAB</h3>
+              <p class="portofolio-list__card-description">Marketing</p>
+            </li>
+
+
+            <li class="portofolio-list__card">
+              <div class="image-overlay">
+                <img class="image-overlay__image" src="./images/GrowingBusiness.jpg" alt="Growing Business" />
+                <div class="overlay">
+                  <p class="overlay__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto!</p>
+                </div>
+              </div>
+              <h3 class="portofolio-list__card-title">Growing Business</h3>
+              <p class="portofolio-list__card-description">Apps</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Mobile Menu -->
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+      </svg>
+    </button>
+
+    <nav class="header-left-list--mob ">
+      <ul class="navigation-list--mob unstyled-list menu">
+        <li><a class="link navigation-list__studio" href="index.html">Studio</a></li>
+        <li><a class="link navigation-list__portofolio" href="portofolio.html">Portfolio</a></li>
+        <li><a class="link navigation-list__contacts" href="contacts.html">Contacts</a></li>
+      </ul>
+    </nav>
+    <ul class="unstyled-list header-contacts--mob menu">
+      <li><a class="link header-contacts--mob__phone" href="tel:+12127724150">+1 212-772-4150</a>
+      </li>
+      <li><a class="link header-contacts--mob__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      </li>
+    </ul>
+    <div class="social-container">
+      <ul class="unstyled-list social-mobile">
+        <li><a class="social-mobile__item link" href="">Instagram</a></li>
+        <li><a class="social-mobile__item link" href="">Twitter</a></li>
+        <li><a class="social-mobile__item link" href="">Facebook</a></li>
+        <li><a class="social-mobile__item link" href="">LinkedIn</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-contacts">
+        <a class="lower-logo link" href="logo.html">Web</a>
+        <address>
+          <ul class="unstyled-list adress">
+            <li><a class="link adress__adress" href="">695 Park Ave, NY 10065, USA</a>
+            </li>
+            <li><a class="link adress__email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li><a class="link adress__phone" href="tel:+12127724150">+1 212-772-4150</a>
+            </li>
+          </ul>
+        </address>
+      </div>
+      <div class="social-footer">
+        <h3 class="social-footer__title">Find us on</h3>
+        <ul class="unstyled-list footer-list">
+          <li class="footer-list__item"><a class="link" href="#">
+              <svg class="icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-instagram-2-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-list__item"><a class="link" href="#"></a>
+            <svg class="icon" width="20" height="20">
+              <use href="./images/icons.svg#icon-twitter-1"></use>
+            </svg>
+            </a>
+          </li>
+          <li class="footer-list__item"><a class="link" href="#"></a>
+            <svg class="icon" width="20" height="20">
+              <use href="./images/icons.svg#icon-facebook-1"></use>
+            </svg>
+            </a>
+          </li>
+          <li class="footer-list__item"><a class="link" href="#"></a>
+            <svg class="icon" width="20" height="20">
+              <use href="./images/icons.svg#icon-linkedin-1"></use>
+            </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <form name="subscribe-form" class="subscribe-form">
+          <label class="subscribe-form__title subscribe-item">Subscribe to the newsletter
+            <input class="subscribe-form__input" type="email" name="email" placeholder="E-mail" />
+          </label>
+          <button type="submit" class="submit-button">Subscribe
+            <svg class="subscribe-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </footer>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous"></script>
+  <script src="./js/mobile-menu.js"></script>
+</body>
+
+
+</html>

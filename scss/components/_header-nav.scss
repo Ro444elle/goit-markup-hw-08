@@ -1,0 +1,129 @@
+.header-section {
+  background: #ffffff;
+  display: flex;
+  border-bottom: 1px solid #ececec;
+
+  .header-container {
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+.header-contacts {
+  display: inline-flex;
+  margin-left: auto;
+  gap: 40px;
+  align-items: center;
+
+  & li {
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--brand-grey);
+
+    &:hover {
+      color: var(--brand-blue);
+      cursor: pointer;
+
+      svg {
+        fill: var(--brand-blue);
+      }
+    }
+    svg {
+      margin-right: 10px;
+    }
+  }
+
+  &__icon {
+    fill: var(--brand-grey);
+    margin-right: 10px;
+  }
+}
+
+.header-left-list {
+  display: inline-flex;
+  justify-content: flex-start;
+
+  &__logo {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: var(--brand-blue);
+  }
+  &__logo::after {
+    content: "Studio";
+    color: black;
+  }
+}
+
+.navigation-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+  margin-left: 93px;
+  align-items: center;
+
+  li a:hover,
+  li a:focus {
+    color: var(--brand-blue);
+  }
+
+  & a {
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+
+  .active-link {
+    position: relative;
+
+    &::after {
+      content: "";
+      border-bottom: 2px solid var(--brand-blue);
+      position: absolute;
+      width: 100%;
+      bottom: -32px;
+      left: 0;
+    }
+  }
+}
+
+.navigation-list {
+  &__contacts,
+  &__studio,
+  &__portofolio {
+    color: var(--brand-black);
+  }
+  &__contacts:hover,
+  &__studio:hover,
+  &__portofolio:hover {
+    color: var(--brand-blue);
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-contacts {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .navigation-list .active-link::after {
+    bottom: -40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contacts {
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+  }
+  .navigation-list .active-link::after {
+    bottom: -32px;
+  }
+}
