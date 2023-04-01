@@ -1,5 +1,6 @@
 .bg-gray {
-  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-studio.jpg);
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Background-M.png);
+  background-size: cover;
 }
 
 .front-section {
@@ -16,7 +17,7 @@
     text-transform: uppercase;
     color: #ffffff;
     position: absolute;
-    width: 700px;
+    // width: 700px;
     height: 120px;
     left: 50%;
     margin-left: -350px;
@@ -43,4 +44,39 @@
   letter-spacing: 0.06em;
   color: #ffffff;
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .bg-gray {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Background-T.png");
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .bg-gray {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Background-D.png");
+  }
+  .front-section__title {
+    width: 700px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .bg-gray {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Background-M-x2.png");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .bg-gray {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Background-T-x2.png");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1200px) and (min-resolution: 192dpi),
+  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .bg-gray {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Background-D-x2.png");
+  }
 }

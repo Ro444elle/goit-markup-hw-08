@@ -175,9 +175,32 @@
       <div class="container image-boxes">
         <h2 class="title">What we do</h2>
         <ul class="unstyled-list images">
-          <li class="item"><img src="images/Codingontablet.jpg" alt="Coding-on-tablet" /></li>
-          <li class="item"><img src="images/Testingapponphone.jpg" alt="Testing-app-on-phone" /></li>
-          <li class="item"><img src="images/Designontablet.jpg" alt="Design-on-tablet" /></li>
+          <li class="item">
+            <picture>
+              <source media="screen and (min-width: 1200px)" srcset="
+                                images/1desktop.png    1x,
+                                images/1desktopx2.png 2x" />
+              <img src="images/1desktop.png" alt="Coding-on-tablet" />
+            </picture>
+          </li>
+
+          <li class="item">
+            <picture>
+              <source media="screen and (min-width: 1200px)" srcset="
+                                images/2mobile.png    1x,
+                                images/2mobilex2.png 2x" />
+              <img src="images/2mobile.png" alt="Testing-app-on-phone" />
+            </picture>
+          </li>
+
+          <li class="item">
+            <picture>
+              <source media="screen and (min-width: 1200px)" srcset="
+                                images/3design.png   1x,
+                                images/3designx2.png 2x " />
+              <img src="images/3design.png" alt="Design-on-tablet" />
+            </picture>
+          </li>
         </ul>
       </div>
     </section>
@@ -190,7 +213,23 @@
         <h2 class="title">Our Team</h2>
         <ul class="member-cards unstyled-list">
           <li class="member-cards__item">
-            <img class="member-cards__image" src="./images/ChristopherWalker.jpg" alt="Christopher Walker" />
+            <picture>
+              <source media="screen and (max-width: 480px)" srcset="
+                                                images/Member1M.png    1x,
+                                                images/Member1M-x2.png 2x
+                                              " />
+              <source media="screen and (min-width: 768px)" srcset="
+                                                images/Member1T.png    1x,
+                                                images/Member1T-x2.png 2x
+                                              " />
+              <source media="screen and (min-width: 1200px)" srcset="
+                                                images/Member1D.png    1x,
+                                                images/Member1D-x2.png 2x
+                                              " />
+              <img class="member-cards__image" src="./images/Member1M.png" alt="Christopher Walker" />
+            </picture>
+
+
             <h3 class="member-cards__title">Christopher Walker</h3>
             <p class="member-cards__text">Product Designer</p>
             <div class="social-media">
@@ -223,7 +262,23 @@
             </div>
           </li>
           <li class="member-cards__item">
-            <img class="member-cards__image" src="./images/KylieEvans.jpg" alt="Kylie Evans" />
+            <picture>
+              <source media="screen and (max-width: 480px)" srcset="
+                                                images/Member2M.png    1x,
+                                                images/Member2M-x2.png 2x
+                                              " />
+              <source media="screen and (min-width: 768px)" srcset="
+                                                images/Member2T.png    1x,
+                                                images/Member2T-x2.png 2x
+                                              " />
+              <source media="screen and (min-width: 1200px)" srcset="
+                                                images/Member2D.png    1x,
+                                                images/Member2D-x2.png 2x
+                                              " />
+              <img class="member-cards__image" src="./images/Member2M.png" alt="Kylie Evans" />
+            </picture>
+
+
             <h3 class="member-cards__title">Kylie Evans</h3>
             <p class="member-cards__text">Frontend Developer</p>
             <div class="social-media">
@@ -256,7 +311,24 @@
             </div>
           </li>
           <li class="member-cards__item">
-            <img class="member-cards__image" src="./images/RyanHarris.jpg" alt="Ryan Harris" />
+            <picture>
+              <source media="screen and (max-width: 480px)" srcset="
+                                                images/Member3M.png    1x,
+                                                images/Member3M-x2.png 2x
+                                              " />
+              <source media="screen and (min-width: 768px)" srcset="
+                                                images/Member3T.png    1x,
+                                                images/Member3T-x2.png 2x
+                                              " />
+              <source media="screen and (min-width: 1200px)" srcset="
+                                                images/Member3D.png    1x,
+                                                images/Member3D-x2.png 2x
+                                              " />
+              <img class="member-cards__image" src="./images/Member3M.png" alt="Ryan Harris" />
+            </picture>
+
+
+
             <h3 class="member-cards__title">Ryan Harris</h3>
             <p class="member-cards__text">Marketing</p>
             <div class="social-media">
@@ -289,7 +361,22 @@
             </div>
           </li>
           <li class="member-cards__item">
-            <img class="member-cards__image" src="./images/TylerMoore.jpg" alt="Tyler Moore" />
+            <picture>
+              <source media="screen and (max-width: 480px)" srcset="
+                                      images/Member4M.png    1x,
+                                      images/Member4M-x2.png 2x
+                                    " />
+              <source media="screen and (min-width: 768px)" srcset="
+                                      images/Member4T.png    1x,
+                                      images/Member4T-x2.png 2x
+                                    " />
+              <source media="screen and (min-width: 1200px)" srcset="
+                                      images/Member4D.png    1x,
+                                      images/Member4D-x2.png 2x
+                                    " />
+              <img class="member-cards__image" src="./images/Member4M.png" alt="Tyler Moore" />
+            </picture>
+
             <h3 class="member-cards__title">Tyler Moore</h3>
             <p class="member-cards__text">UI Designer</p>
             <div class="social-media">
