@@ -1,0 +1,11 @@
+{
+  "name": "goit-markup-hw-08",
+  "version": "1.0.0",
+  "description": "goit-markup-hw-08",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
